@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- stylesheet -->
+<link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app-details">
+            <img class="app-icon" src="./assets/icon.png" alt="">
+            <h1 class="app-title">Currency Converter</h1>
+        </div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" value='100'>
+        <div class="dropdown">
+            <select id="from-currency-select"></select>
+            <select id="to-currency-select"></select>
+        </div>
+        <button id="convert-button">Convert</button>
+        <p class="result" id="result"></p>
+    </div>
+    <h5>CREATED BY:  MOUMIN AHMAD</h5>
+</body>
+<!-- script with Array of Supportd Country Codes -->
+<script src="./JS/currency-codes.js"></script>
+<!-- script with api key -->
+<script src="./JS/api-key.js"></script>
+<!-- Script -->
+<script src="./JS/script.js"></script>
+</html>
