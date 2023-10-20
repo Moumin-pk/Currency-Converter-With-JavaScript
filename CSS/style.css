@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppines', sans-serif;
+    outline: none;
+    border: none;
+}
+body{
+    width: 100%;
+    height: 80vh;
+    color: var(--main);
+    height: 100vh;
+    background:url(../assets/background.png)
+}
+.wrapper{
+    width: 90%;
+    max-width: 25em;
+    border: 1px solid gray;
+    box-shadow: 2px -2px 20px 1px grey;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 2em;
+    border-radius: 0.8em;
+}
+.app-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.app-icon{
+width: 150px;
+}
+.app-title{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;  
+    margin-bottom: 10px;
+}
+label{
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+}
+input#amount{
+    display: block;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 7px;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-left: 10px;
+}
+.dropdown{
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    margin: 20px 0px;
+}
+#from-currency-select{
+    width: 50%;
+    padding: 7px 0px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 10px;
+    border-bottom: 1px solid #fff;
+}
+#to-currency-select{
+    width: 50%;
+    padding: 7px 0px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+/* select::-ms-expand {
+    display: none;
+  } */
+
+  select option {
+    font-size: 16px;
+    padding: 10px;
+  }
+  select option{
+    background-color: #212121;
+  }
+  select option:checked {
+    background-color: #fff; /* Change this to your desired color */
+    color: #212121;
+  }
+button{
+    width: 100%;
+    padding: 7px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 20px 0px; 
+} 
+  button:hover {
+   box-shadow: 2px 2px 5px 1px gray;
+  }
+.result{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(256, 0, 0, 0.3) ;
+    color: #FFF;
+}
+p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+h5{
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+@media screen and (max-width: 500px) {
+   .wrapper{
+    border: none;
+    width: 100%;
+    box-shadow:none;
+   }
+ }
